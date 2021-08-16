@@ -1,0 +1,55 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@charset "utf-8";
+
+$background-color: #121212;
+$link-color: green;
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+@import "minimal-mistakes"; // main partials
+
+// navigation links underline color
+.greedy-nav .visible-links a:before {
+    background: green
+}
+
+// search icon color
+.search__toggle {
+    color: white;
+    &:hover {
+        color: green;
+    }
+    &:focus {
+        color: white; // green;
+    }
+}
+
+// button focus outline color
+button:focus {
+    outline-color: green;
+}
+
+// hamburger button bar colors 
+.greedy-nav__toggle {
+    .navicon {
+        background: green;
+    }
+    .navicon::before, .navicon::after {
+        background: white;
+    }
+    &:hover {
+        .navicon {
+            background: white;
+        }
+        .navicon::before, .navicon::after {
+            background: green;
+        }
+    }
+}
+
+// pagination color
+.pagination li a.current, .pagination li a.current.disabled {
+    background: green;
+}
