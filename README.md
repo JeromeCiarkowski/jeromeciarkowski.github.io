@@ -2,6 +2,11 @@
 
 # TODO
 * Learn GitHub Pages, jekyll
+    * gem theme
+    * only content, no theme
+* README.md
+    * First Setup
+    * Commands
 * Change Root URL to JeromeCiarkowski.com
     * https://github.com/JeromeCiarkowski/jeromeciarkowski.github.io/settings/pages
 * Add Repository License
@@ -16,17 +21,18 @@ git clone git@github.com:JeromeCiarkowski/jeromeciarkowski.github.io.git
 cd jeromeciarkowski.github.io
 ```
 
-## Create Website
+## Build the Website
 ```zsh
-docker container run --rm --volume $PWD:/srv/jekyll jekyll/jekyll jekyll new .
+docker container run --rm --volume $PWD:/srv/jekyll jekyll/jekyll jekyll build
+docker container exec $(docker container ls -aqf "name=blog") jekyll build --verbose 
 ```
 
 ## Serve the Website
 ```zsh
-docker container run --name blog --volume $PWD:srv/jekyll -it jekyll/jekyll:3.8 jekyll serve --watch --drafts
+docker container run --name blog --volume $PWD:/srv/jekyll -p 4000:4000 -it jekyll/jekyll jekyll serve --livereload
 ```
 
-## Restart the Website
+## Restart the Container
 ```zsh
 docker container restart blog
 ```
