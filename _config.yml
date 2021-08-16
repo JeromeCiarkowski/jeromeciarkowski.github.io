@@ -43,7 +43,7 @@ plugins:
 author:
   name   : "Jerome P. Ciarkowski"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "  /je-rome chur-kow-skee/ <br>(noun) <br>1. An enthusiast of <br>choice architecture, software engineering, video games, bodybuilding, and distractions from the game of life"
+  bio    : "/je-rome chur-kow-skee/ <br>(noun) <br>1. An enthusiast of <br>choice architecture, software engineering, video games, bodybuilding, and distractions from the game of life"
   links:
     - label: "Blog"
       icon: "fas fa-fw fa-pencil-alt"
@@ -65,7 +65,6 @@ author:
       url: "https://steamcommunity.com/id/FelixBrewBaker"
 
 footer:
-  links:
   links:
     - label: "Blog"
       icon: "fas fa-fw fa-pencil-alt"
