@@ -22,7 +22,7 @@ $link-color: green;
         color: green;
     }
     &:focus {
-        color: white; // green;
+        color: white;
     }
 }
 
@@ -80,6 +80,12 @@ button:focus {
 // primary button color
 .btn--primary {
     background-color: green;
+    &:hover {
+        background-color: purple;
+    }
+    &:visited {
+        background-color: purple;
+    }
 }
 
 // Splash feature row image height
