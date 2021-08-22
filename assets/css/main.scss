@@ -53,3 +53,49 @@ button:focus {
 .pagination li a.current, .pagination li a.current.disabled {
     background: green;
 }
+
+// block quote color
+.blockquote {
+    border-left-color: green;
+}
+
+// show-read time separator "|"
+.page__meta-sep::before {
+    content: "\FF5C";
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+// table of contents color
+.toc {
+    .nav__title {
+        background: green;
+    }
+    .active a {
+        background-color: white;
+        color: black;
+    }
+}
+
+// primary button color
+.btn--primary {
+    background-color: green;
+}
+
+// Splash feature row image height
+// Consistent height, no matter the resolutions
+.archive__item-teaser img {
+    height: 500px;
+}
+
+// // image teaser in archive
+// .thumbnail-container {
+//     max-width: 100%;
+//     overflow: hidden;
+//     border-radius: 5px;
+//     margin-bottom: 25px;
+//     img {
+//         margin-top: -11.5%;
+//         margin-bottom: -11.5%;
+//     }
+// }
