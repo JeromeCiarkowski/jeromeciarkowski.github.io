@@ -3,19 +3,9 @@ main:
     url: /
   - title: "Blog"
     url: /blog/
-  # - title: "Posts"
-  #   url: /posts/
-  # - title: "Category"
-  #   url: /categories/
-  # - title: "Tags"
-  #   url: /tags/
   - title: "Projects"
     url: /projects/
-  # - title: "Gallery"
-  #   url: /gallery/
   - title: Resume
     url: /resume/
-  # - title: Professional
-  #   url: /resume/
   - title: "About"
     url: /about/
