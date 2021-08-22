@@ -1,3 +1,9 @@
+---
+header:
+    image: "assets/images/bio-photo.jpg"
+    teaser: "assets/images/bio-photo.jpg"
+---
+
 MY FIRST WORDPRESS WEBSITE
 Welcome
 First, welcome, friends! This is my first post. Fittingly, it is about my first WordPress website. A lot of firsts in this article–if you could not already tell. Now let us move on from the first section.
